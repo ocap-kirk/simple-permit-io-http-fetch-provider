@@ -1,0 +1,31 @@
+{
+    "users": {
+        "thomas@permit.io": {
+            "attributes": {
+                "email": "thomas@permit.io",
+                "time_based_groups": [
+                    {
+                        "role": "admin",
+                        "tenant": "default",
+                        "expires": 1000
+                    },
+                    {
+                        "role": "admin",
+                        "tenant": "navan-com",
+                        "expires": 2000
+                    }
+                ]
+            },
+            "role_assignments": [
+                {
+                    "role": "admin",
+                    "tenant": "default"
+                },
+                {
+                    "role": "admin",
+                    "tenant": "navan-com"
+                }
+            ]
+        }
+    }
+}
