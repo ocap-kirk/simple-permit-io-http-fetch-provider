@@ -3,13 +3,13 @@
         "7536da45-b603-484b-ab01-11bd779842f5": {
             "default": [
                 {
-                    "expires": 1000,
+                    "expires": 1733256879832,
                     "role": "admin"
                 }
             ],
-            "navan-com": [
+            "coke": [
                 {
-                    "expires": 2000,
+                    "expires": 1733861761081,
                     "role": "admin"
                 }
             ]
