@@ -23,7 +23,7 @@ This applicaiton is an example of a simple http data fetcher for Permit.io. It u
 ## Configuring Permit.io
 Now that this project is running, let's configure Permit.io to use it.
 
-### [Add a custom data source](add-a-custom-data-source)
+### Add a custom data source
 Make the following API call to Permit.io to [add a custom data source](https://docs.permit.io/how-to/manage-data/use-external-data-source).
 1. Replace `{project_id}` and `{environment_id}` with your project and environment ids.
 1. Replace `permit_key_` with your Permit.io API key.
@@ -64,7 +64,7 @@ curl --location --request PUT 'https://api.permit.io/v2/projects/{project_id}/{e
     ```
     - Notes
         - This maps the `user_roles_expires` key in the custom data source to the `time_based_groups` key in the Permit user object. It can then be used in policies the same way you would use any other user attribute.
-        - `data["data.json"]` is the `dst_path` to the [custom data source API call](#add-a-custom-data-source) we created earlier.
+        - `data["data.json"]` is the `dst_path` to the custom data source API call we created earlier.
         - `user_roles_expires` is the key in the custom data source where the time based group assignments are stored.
         - `[input.user.key]` is the key of the user you are checking permissions for.
         - `[input.resource.tenant]` is the current tenant of the resource you are checking permissions for.
