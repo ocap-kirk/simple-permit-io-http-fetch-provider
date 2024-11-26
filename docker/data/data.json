@@ -1,29 +1,16 @@
 {
-    "users": {
-        "thomas@permit.io": {
-            "attributes": {
-                "email": "thomas@permit.io",
-                "time_based_groups": [
-                    {
-                        "role": "admin",
-                        "tenant": "default",
-                        "expires": 1000
-                    },
-                    {
-                        "role": "admin",
-                        "tenant": "navan-com",
-                        "expires": 2000
-                    }
-                ]
-            },
-            "role_assignments": [
+    "user_roles_expires": {
+        "7536da45-b603-484b-ab01-11bd779842f5": {
+            "default": [
                 {
-                    "role": "admin",
-                    "tenant": "default"
-                },
+                    "expires": 1000,
+                    "role": "admin"
+                }
+            ],
+            "navan-com": [
                 {
-                    "role": "admin",
-                    "tenant": "navan-com"
+                    "expires": 2000,
+                    "role": "admin"
                 }
             ]
         }

@@ -12,7 +12,7 @@ services:
     # by default we run opal-client from latest official image
     image: permitio/pdp-v2:latest
     environment:
-      - PDP_API_KEY=permit_key_
+      - PDP_API_KEY=${PDP_API_KEY} # pulled from .env
       - PDP_OPA_CLIENT_QUERY_TIMEOUT=60
       - PDP_DEBUG=True
       - PDP_OPA_DECISION_LOG_CONSOLE=True
